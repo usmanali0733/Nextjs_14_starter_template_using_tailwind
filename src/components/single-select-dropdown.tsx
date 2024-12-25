@@ -1,4 +1,3 @@
-import { OptionWithIcon } from '@/types';
 import { mergeClasses } from '@/utils/helpers';
 import {
   Listbox,
@@ -8,6 +7,15 @@ import {
   Transition,
 } from '@headlessui/react';
 import React, { Fragment } from 'react';
+
+type Option = {
+  value: string;
+  name: string;
+};
+
+type OptionWithIcon = Option & {
+  icon?: React.ReactElement | null;
+};
 
 type SingleSelectDropdownProps = {
   options: OptionWithIcon[]; // Options for the dropdown

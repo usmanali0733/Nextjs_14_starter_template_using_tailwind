@@ -1,8 +1,15 @@
 'use client';
-
-import { Option, OptionWithIcon } from '@/types';
 import { FC, ReactElement } from 'react';
 import { mergeClasses } from '../utils/helpers';
+
+type Option = {
+  value: string;
+  name: string;
+};
+
+type OptionWithIcon = Option & {
+  icon?: React.ReactElement | null;
+};
 
 type ToggleTabProps = {
   options: OptionWithIcon[];

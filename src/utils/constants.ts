@@ -1,11 +1,5 @@
-export enum LayoutType {
-  Grid = 'grid',
-  List = 'list',
-}
-
-
-
-export enum AttachmentTypes {
-  FILE = 'FILE',
-  MEDIA = 'MEDIA',
-}
+//for constants just like 
+// export enum AttachmentTypes {
+//   FILE = 'FILE',
+//   MEDIA = 'MEDIA',
+// }

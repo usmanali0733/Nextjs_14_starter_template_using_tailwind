@@ -1,4 +1,3 @@
-import { Option, OptionWithIcon } from '@/types';
 import { mergeClasses } from '@/utils/helpers';
 import {
   Listbox,
@@ -9,6 +8,17 @@ import {
 } from '@headlessui/react';
 import React, { Fragment } from 'react';
 import { HiDotsHorizontal } from 'react-icons/hi';
+
+
+type Option = {
+  value: string;
+  name: string;
+};
+
+
+type OptionWithIcon = Option & {
+  icon?: React.ReactElement | null;
+};
 
 export type DetailsDropdownProps = {
   pOptions: OptionWithIcon[]; // Options for the dropdown
